@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+     <title>Register</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+     <link rel="stylesheet" type="text/css" href="darkred.css">
+
+
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+     
+   </script>
+    
+  </head>
+
+  <body>
+
+     
+
+      <br>
+      <% let j=1 %>
+      <div class="container">
+          <h1 class="title">Register</h1>
+          <form action="/registerUser" method="POST" id="quizForm">
+
+
+                  
+                    <div class="input-field col s12 black-text text-darken-2" >
+                      <input id="name" name="name" type="text" class="validate" >
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="input-field col s12 black-text text-darken-2" >
+                            <input id="password" name="password" type="text" class="validate" >
+                            <label for="password">Password</label>
+                          </div>
+                    
+              
+                      <div class="input-field col s12 blue-text text-darken-2">
+                        <input id="email" name="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                      </div>
+                      <!--  
+                      <div class="input-field col s12 blue-text text-darken-2">
+                        <input id="religion" name="religion" type="text" class="validate">
+                        <label for="religion">Religion</label>
+                      </div>
+
+                      <div class="input-field col s12 blue-text text-darken-2">
+                        <input id="party" name="party" type="text" class="validate">
+                        <label for="party">Party</label>
+                      </div>
+
+                  d        -->
+            <br>
+            <input type="submit" class="btn" value="Submit"> 
+          </form>
+         
+          </div>
+
+      </div>
+
+  </body>
+</html>
